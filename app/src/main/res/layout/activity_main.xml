@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tvBrackets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnCheckOrder"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:text="@string/check_order"
+        android:onClick="checkOrder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvBrackets" />
+
+    <EditText
+        android:id="@+id/etBrackets"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="@string/enter_brackets"
+        android:inputType="text"
+        android:text="@string/default_brackets"
+        app:layout_constraintBottom_toBottomOf="@id/btnCheckOrder"
+        app:layout_constraintEnd_toStartOf="@id/btnCheckOrder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/btnCheckOrder"
+        tools:ignore="Autofill" />
+
+
+    <TextView
+        android:id="@+id/tvSubstringCheck"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@id/btnCheckOrder" />
+
+    <Button
+        android:id="@+id/btnSubstringCheck"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:text="@string/check_count"
+        android:onClick="checkCount"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvSubstringCheck" />
+
+    <EditText
+        android:id="@+id/etString"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="@string/enter_string"
+        android:inputType="text"
+        android:text="@string/catcowcat"
+        app:layout_constraintBottom_toBottomOf="@id/btnSubstringCheck"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/etSubstring"
+        app:layout_constraintTop_toTopOf="@id/btnSubstringCheck"/>
+
+    <EditText
+        android:id="@+id/etSubstring"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:text="@string/cat"
+        android:hint="@string/enter_substring"
+        android:inputType="text"
+        app:layout_constraintBottom_toBottomOf="@id/btnSubstringCheck"
+        app:layout_constraintEnd_toStartOf="@id/etCount"
+        app:layout_constraintTop_toTopOf="@id/btnSubstringCheck"/>
+
+    <EditText
+        android:id="@+id/etCount"
+        android:layout_width="50dp"
+        android:layout_height="0dp"
+        android:hint="@string/number"
+        android:inputType="number"
+        android:text="@string/_2"
+        app:layout_constraintBottom_toBottomOf="@id/btnSubstringCheck"
+        app:layout_constraintEnd_toStartOf="@id/btnSubstringCheck"
+        app:layout_constraintTop_toTopOf="@id/btnSubstringCheck"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

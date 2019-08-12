@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Week4Day1-Test</string>
+    <string name="check_order">Check Order</string>
+    <string name="enter_brackets">Enter Brackets</string>
+    <string name="default_brackets">({})[]</string>
+    <string name="enter_string">Enter String</string>
+    <string name="number">#</string>
+    <string name="enter_substring">Enter Substring</string>
+    <string name="check_count">Check Count</string>
+    <string name="catcowcat">catcowcat</string>
+    <string name="cat">cat</string>
+    <string name="_2">2</string>
+</resources>
